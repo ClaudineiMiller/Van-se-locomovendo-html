@@ -1,0 +1,185 @@
+body {
+    background-color: rgb(255, 255, 205);
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 50px;
+    padding: 30px 0;
+}
+
+#carro {
+    position: fixed;
+    background-color: orange;
+    width: 300px;
+    height: 150px;
+    border: solid;
+    border-bottom: 6px double rgb(46, 42, 42);
+    border-radius: 30px 150px 30px 15px;
+    margin-left: 15%;
+    margin-top: 80px;
+    animation: andar 5s infinite alternate;
+}
+
+@keyframes andar {
+    from {
+        transform: translateX(150%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes lanterna-piscando {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes farol-piscando {
+    from {
+        background-color: #baeeee;
+    }
+
+    to {
+        background-color: orange;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#lanterna-traseira {
+    float: left;
+    background-color: rgb(252, 0, 0);
+    width: 8px;
+    height: 30px;
+    margin-top: 100px;
+    margin-left: -10px;
+    border-right: solid;
+    border-radius: 90% 0 0 90%;
+    animation: lanterna-piscando .5s linear infinite;
+
+}
+
+#vidro-traseiro {
+    float: left;
+    background-color: #baeeee;
+    width: 70px;
+    height: 50px;
+    margin-top: 9px;
+    margin-left: 15px;
+    border-radius: 15px;
+    border: solid;
+}
+
+#vidro-meio {
+    float: left;
+    background-color: #baeeee;
+    width: 70px;
+    height: 50px;
+    margin-top: 9px;
+    margin-left: 15px;
+    border-radius: 15px;
+    border: solid;
+}
+
+#vidro-frente {
+    float: right;
+    background-color: #baeeee;
+    width: 50px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 40px;
+    border-radius: 25px 550% 0 0;
+    border: solid;
+}
+
+#roda-traseira {
+    background-color: rgb(46, 42, 42);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#calota-traseira {
+    background-color: rgb(214, 143, 143);
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin-left: 33px;
+    margin-top: -55px;
+    border: 4px double black;
+}
+
+#roda-dianteira {
+    background-color: rgb(46, 42, 42);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: -55px;
+    margin-left: 195px;
+}
+
+#calota-dianteira {
+    background-color: rgb(214, 143, 143);
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin-left: 209px;
+    margin-top: -55px;
+    border: 4px double black;
+}
+
+#linha-vertical {
+    background-color: rgb(87, 80, 80);
+    width: 2px;
+    height: 70px;
+    margin-left: 190px;
+}
+
+#linha-horizontal {
+    border-bottom: 2px solid rgb(87, 80, 80);
+    width: 286px;
+    height: 2px;
+}
+
+#faixa-horizontal {
+    background-color: rgb(46, 42, 42);
+    width: 292px;
+    height: 10px;
+    margin-top: 2px;
+}
+
+#farol {
+    float: right;
+    background-color: #baeeee;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 20% 80%;
+    animation: farol-piscando 1s linear infinite;
+}
+
+hr {
+    margin-top: 200px;
+    border: 95px solid gray;
+    border-radius: 50% 50%;
+}
