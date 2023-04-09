@@ -50,7 +50,7 @@ h1 {
 
 @keyframes farol-piscando {
     from {
-        background-color: #baeeee;
+        background-color: white;
     }
 
     to {
