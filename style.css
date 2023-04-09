@@ -166,6 +166,17 @@ h1 {
     margin-top: 2px;
 }
 
+#farol {
+    float: right;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border-radius: 20% 80%;
+    animation: farol-piscando 1s linear infinite;
+}
+
 #farol-border-fixa {
     float: right;
     background-color: orange;
