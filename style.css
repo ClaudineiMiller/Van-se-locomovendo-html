@@ -42,10 +42,6 @@ h1 {
     50% {
         opacity: 1;
     }
-
-    100% {
-        opacity: 0;
-    }
 }
 
 @keyframes farol-piscando {
@@ -55,10 +51,6 @@ h1 {
 
     to {
         background-color: orange;
-    }
-
-    100% {
-        opacity: 0;
     }
 }
 
@@ -174,18 +166,8 @@ h1 {
     margin-right: 5px;
     margin-top: 10px;
     border-radius: 20% 80%;
+    border: 1px solid black;
     animation: farol-piscando 1s linear infinite;
-}
-
-#farol-border-fixa {
-    float: right;
-    background-color: orange;
-    width: 30px;
-    height: 30px;
-    margin-right: -32px;
-    margin-top: 10px;
-    border: 2px solid black;
-    border-radius: 20% 80%;
 }
 
 #base {
